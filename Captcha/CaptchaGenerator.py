@@ -45,9 +45,4 @@ class Captcha:
                 pixels[i] = (255, 255, 255)
 
         captcha.putdata(pixels)
-        captcha.show()
-        return captcha
-
-
-c = Captcha('..\\Json\\settings.json')
-c.generate()
+        return [captcha, captcha_text]
